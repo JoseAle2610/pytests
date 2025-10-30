@@ -1,0 +1,13 @@
+{
+  "fecha": "2025-10-25 14:44:43",
+  "tasa_bcv": 216.3714,
+  "tasa_binance_p2p": {
+    "promedio": 304.805,
+    "mediana": 304.7,
+    "minimo": 304.3,
+    "maximo": 306.5,
+    "muestras": 20
+  },
+  "diferencia": 88.43360000000001,
+  "porcentaje_diferencia": 40.87120571387901
+}
