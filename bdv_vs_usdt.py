@@ -512,10 +512,10 @@ def main():
             print(f"Advertencia: no se pudo guardar en SQLite: {e}")
 
         # Guardar archivo JSON (comportamiento existente)
-        with open("analisis_tasas.json", "w", encoding="utf-8") as f:
-            json.dump(resultados, f, ensure_ascii=False, indent=2)
+        # with open("analisis_tasas.json", "w", encoding="utf-8") as f:
+        #   json.dump(resultados, f, ensure_ascii=False, indent=2)
 
-        print("\nResultados guardados en 'analisis_tasas.json'")
+        # print("\nResultados guardados en 'analisis_tasas.json'")
     else:
         print("\nNo se pudieron obtener todas las tasas necesarias para el análisis")
 

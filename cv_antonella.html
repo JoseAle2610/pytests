@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Antonella Mujica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            font-size: 14px;
+        }
+        /* Botón de imprimir flotante (esquina inferior izquierda) */
+        #printBtn {
+            position: fixed;
+            left: 1rem;
+            bottom: 1rem;
+            background: #EDD6B8;
+            color: #5A3E2B;
+            padding: 0.5rem 0.9rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 8px 20px rgba(90,62,43,0.18);
+            z-index: 9999;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+        }
+        #printBtn:hover { transform: translateY(-2px); }
+
+        /* Estilos de impresión mínimos */
+        @media print {
+            #printBtn { display: none !important; }
+            @page { margin: 12mm; }
+            body { background: white !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .shadow-2xl, .shadow-sm { box-shadow: none !important; }
+        }
+    </style>
+</head>
+<body class="bg-[#F2E8DD] p-6">
+    <div class="max-w-2xl min-w-[700px] mx-auto bg-[#F7EFE6] shadow-2xl rounded-lg overflow-hidden">
+        <!-- Header -->
+        <div class="bg-gradient-to-r from-[#E6D0B2] to-[#E0C3A0] text-[#5A3E2B] p-8">
+            <div class="flex items-center gap-6">
+                <!-- Placeholder para foto -->
+                <div class="w-32 h-32 rounded-full bg-white/20 border-4 border-white flex items-center justify-center flex-shrink-0">
+                    <img src="./piciosa.png" alt="Foto de Antonella Mujica" class="w-full h-full rounded-full object-cover">
+                </div>
+                <!-- Info -->
+                <div>
+                    <h1 class="text-4xl font-bold mb-2">ANTONELLA MUJICA</h1>
+                    <p class="text-xl mb-4">TSU en Informática</p>
+                    <p class="text-lg opacity-90">Especialista/Analista de Tecnología</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-8 space-y-6">
+            <!-- Contacto (compacto en una sola línea) -->
+            <div class="text-sm text-[#5A3E2B]">
+                <div class="flex items-center gap-4 flex-wrap">
+                    <span class="flex items-center gap-1">📞 <span class="font-semibold">+58 412 5280750</span></span>
+                    <span class="flex items-center gap-1">✉️ <a href="mailto:antronellaalessan@gmail.com" class="underline font-semibold">antronellaalessan@gmail.com</a></span>
+                    <span class="flex items-center gap-1">🔗 <a href="#" class="underline">LinkedIn</a></span>
+                    <!-- <span class="flex items-center gap-1">🐙 <a href="#" class="underline">GitHub</a></span> -->
+                </div>
+            </div>
+
+            <!-- Resumen Profesional -->
+            <div>
+                <h2 class="text-xl font-bold text-[#8E5F36] mb-3 pb-2 border-b-2 border-[#DDB98C]">RESUMEN PROFESIONAL</h2>
+                <p class="text-base text-[#5A3E2B] leading-relaxed">
+                    TSU en Informática con 3+ años de experiencia en administración de infraestructura IT, automatización de procesos con Python, gestión de servidores Linux/Windows y soluciones de seguridad. Especializada en optimización de sistemas, soporte técnico y despliegue de soluciones cloud y on-premise.
+                </p>
+            </div>
+
+            <!-- Habilidades Técnicas -->
+            <div>
+                <h2 class="text-xl font-bold text-[#8E5F36] mb-3 pb-2 border-b-2 border-[#DDB98C]">HABILIDADES</h2>
+                <div class="space-y-2">
+                    <p class="text-base text-[#5A3E2B]"><strong class="text-[#8E5F36]">Lenguajes & BD</strong> Python - PHP - Bash - MySQL - PostgreSQL</p>
+                    <p class="text-base text-[#5A3E2B]"><strong class="text-[#8E5F36]">Plataforma</strong> Docker - AWS - Hipervisores (Proxmox, VMware, XenServer)</p>
+                    <p class="text-base text-[#5A3E2B]"><strong class="text-[#8E5F36]">Redes y Seguridad</strong> Cisco - FortiGate - Unify</p>
+                    <p class="text-base text-[#5A3E2B]"><strong class="text-[#8E5F36]">Sistemas Operativos</strong> Linux - Windows Server</p>
+                    <p class="text-base text-[#5A3E2B]"><strong class="text-[#8E5F36]">Habilidades Blandas</strong> Resolución de problemas - Trabajo en equipo - Comunicación - Gestión de tiempo</p>
+                </div>
+            </div>
+
+            <!-- Experiencia Laboral -->
+            <div>
+                <h2 class="text-xl font-bold text-[#8E5F36] mb-3 pb-2 border-b-2 border-[#DDB98C]">EXPERIENCIA LABORAL</h2>
+                <div class="mb-4">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-bold text-[#5A3E2B]">Especialista/Analista de Tecnología</h3>
+                        <span class="text-sm text-[#8E5F36] bg-[#EDD6B8] px-3 py-1 rounded">Dic 2021 - Actualidad</span>
+                    </div>
+                    <p class="text-base font-semibold text-[#8E5F36] mb-2">SIPECA C.A.</p>
+                    <ul class="space-y-1 text-base text-[#5A3E2B]">
+                        <li>▸ Desarrollé bot en Python que redujo en 40% el tiempo de detección de fallos en respaldos.</li>
+                        <li>▸ Implementé seguridad con FortiGate (firewall, VPN, 2FA) mejorando protección empresarial.</li>
+                        <li>▸ Optimicé consultas MySQL logrando 25% de mejora en rendimiento de bases de datos.</li>
+                        <li>▸ Diseñé sistema de respaldo en NAS Synology y AWS S3 para múltiples servidores.</li>
+                        <li>▸ Lideré implementación de Elastix, GLPI, Snipe y sistema de cámaras Unifi.</li>
+                        <li>▸ Configuré Windows Server y gestioné instancias AWS S3 optimizando costos.</li>
+                        <li>▸ Implementé Elastic Stack para observabilidad y seguridad de infraestructura web.</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-bold text-[#5A3E2B]">Pasante</h3>
+                        <span class="text-sm text-[#8E5F36] bg-[#EDD6B8] px-3 py-1 rounded">Abr - Nov 2021</span>
+                    </div>
+                    <p class="text-base font-semibold text-[#8E5F36] mb-2">SIPECA C.A.</p>
+                    <ul class="space-y-1 text-base text-[#5A3E2B]">
+                        <li>▸ Brindé soporte preventivo y correctivo de equipos, instalación de cableado de red y rackeo de servidores.</li>
+                        <li>▸ Administré servidores Linux con XenServer, Proxmox y VMware.</li>
+                        <li>▸ Desarrollé scripts para copias de seguridad automáticas y monitoreo de UPS.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Educación -->
+            <div>
+                <h2 class="text-xl font-bold text-[#8E5F36] mb-3 pb-2 border-b-2 border-[#DDB98C]">EDUCACIÓN</h2>
+                <div class="space-y-2">
+                    <div>
+                        <h3 class="font-semibold text-[#5A3E2B]">Instituto Universitario Jesús Obrero</h3>
+                        <p class="text-base text-[#8E5F36]">TSU en Informática</p>
+                        <p class="text-sm text-[#A56F14]">2021</p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-[#5A3E2B]">Liceo Rafael Monasterios</h3>
+                        <p class="text-base text-[#8E5F36]">Bachiller en Ciencias</p>
+                        <p class="text-sm text-[#A56F14]">2018</p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <!-- Referencias -->
+            <div>
+                <h2 class="text-xl font-bold text-[#A67C52] mb-3 pb-2 border-b-2 border-[#F5CBA7]">REFERENCIAS</h2>
+                <p class="text-base text-[#A67C52] italic">Disponibles bajo solicitud</p>
+            </div>
+        </div>
+           
+    </div>
+
+    <!-- Botón flotante para imprimir -->
+    <button id="printBtn" title="Imprimir CV">Imprimir PDF</button>
+
+    <script>
+        // Llamar a la impresión
+        document.getElementById('printBtn').addEventListener('click', function() {
+            window.print();
+        });
+    </script>
+</body>
+</html>
